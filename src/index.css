@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* =========================
@@ -151,7 +150,6 @@ img {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
@@ -375,7 +373,6 @@ img {
     opacity: 0;
     transform: translateY(25px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -386,7 +383,6 @@ img {
   from {
     max-width: 0;
   }
-
   to {
     max-width: 100%;
   }
@@ -1410,7 +1406,7 @@ img {
 }
 
 /* ==============================
-    RESUME SECTION
+   RESUME SECTION
 ============================== */
 
 .resume-section {
@@ -1648,6 +1644,7 @@ img {
     color: #1d4ed8 !important;
   }
 }
+
 .resume-download-btn {
   display: inline-block;
   padding: 12px 24px;
