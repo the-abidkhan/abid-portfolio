@@ -555,33 +555,11 @@ function App() {
       <p>
         <a href="https://booknook-client-theta.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
         {" | "}
-        <a href="https://github.com/the-abidkhan/booknook-client" target="_blank" rel="noreferrer">GitHub</a>
-      </p>
-
-      <h4>FitLog — Fitness Tracking Application</h4>
-      <p>
-        A fitness application for managing workout plans
-        and saving favorite exercises.
-      </p>
-      <p>Features: Workout plans, exercise browsing and saved exercises.</p>
-      <p>
-        <a href="https://fit-log-psi-five.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
+        <a href="https://github.com/the-abidkhan/booknook-client" target="_blank" rel="noreferrer">GitHub Client</a>
         {" | "}
-        <a href="https://github.com/the-abidkhan/Fit-Log" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/the-abidkhan/booknook-server" target="_blank" rel="noreferrer">GitHub Server</a>
       </p>
-
-      <h4>Bazardor — Vegetable Price Tracking Platform</h4>
-      <p>
-        A platform for checking daily vegetable prices
-        per kilogram across different areas.
-      </p>
-      <p>Features: Daily price information and area-wise price comparison.</p>
-      <p>
-        <a href="https://pha-7-bazardor.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
-        {" | "}
-        <a href="https://github.com/the-abidkhan/PHA-7-Bazardor" target="_blank" rel="noreferrer">GitHub</a>
-
-        <h4>MentorLagbe — Full Stack Tuition Management Platform</h4>
+      <h4>MentorLagbe — Full Stack Tuition Management Platform</h4>
 <p>
   A tuition management platform where students can find tutors,
   apply for tuition, and manage applications. Tutors can post
@@ -591,9 +569,10 @@ function App() {
 <p>
   <a href="https://mentorlagbe-client-ebon.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
   {" | "}
-  <a href="https://github.com/the-abidkhan/mentorlagbe-client" target="_blank" rel="noreferrer">GitHub</a>
+  <a href="https://github.com/the-abidkhan/mentorlagbe-client" target="_blank" rel="noreferrer">GitHub Client</a>
+  {" | "}
+  <a href="https://github.com/the-abidkhan/mentorlagbe-server" target="_blank" rel="noreferrer">GitHub Server</a>
 </p>
-      </p>
     </div>
 
     <div className="resume-block">
@@ -601,10 +580,6 @@ function App() {
 
       <p><strong>B.Sc. in Electronics & Communication Engineering — Institute of Science and Technology (IST) </strong></p>
       <p>2024 – Present | Expected Graduation: 2029</p>
-
-      <p><strong>HSC — Dhaka College (2023)</strong> | GPA: 4.92 / 5.00</p>
-      <p><strong>SSC — Haji Mohammad Ekhlas Uddin Bhuiyan High School & College (2021)</strong> | GPA: 5.00 / 5.00</p>
-      <p><strong>JSC — Haji Mohammad Ekhlas Uddin Bhuiyan High School & College (2018)</strong> | GPA: 5.00 / 5.00</p>
     </div>
 
     <div className="resume-block">
