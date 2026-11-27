@@ -1405,6 +1405,7 @@ img {
   }
 }
 
+
 /* ==============================
    RESUME SECTION
 ============================== */
@@ -1484,29 +1485,58 @@ img {
   margin: 3px 0;
 }
 
+/* ==============================
+   RESUME ACTION BUTTONS
+============================== */
+
 .resume-actions {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
   margin-top: 28px;
 }
 
-.resume-actions button {
+/* Same Style for Both Buttons */
+
+.resume-actions button,
+.resume-actions .resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 12px 24px;
+  min-height: 44px;
+
   border: 1px solid #2563eb;
   border-radius: 6px;
+
   background: #2563eb;
-  color: #ffffff;
+  color: #ffffff !important;
+
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.2;
+
+  text-decoration: none;
   cursor: pointer;
+
+  box-sizing: border-box;
   transition: 0.25s ease;
 }
 
-.resume-actions button:hover {
+/* Hover Effect */
+
+.resume-actions button:hover,
+.resume-actions .resume-download-btn:hover {
   background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff !important;
   transform: translateY(-2px);
 }
+
+/* Disabled Button */
 
 .resume-actions button:disabled {
   opacity: 0.5;
@@ -1515,6 +1545,7 @@ img {
 }
 
 /* Resume Section Heading Alignment */
+
 .resume-section .section-heading {
   text-align: center;
   margin: 0 auto;
