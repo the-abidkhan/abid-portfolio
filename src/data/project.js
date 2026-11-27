@@ -33,6 +33,25 @@ const projects = [
     liveLink: "https://pha-7-bazardor.vercel.app",
     githubLink: "https://github.com/the-abidkhan/PHA-7-Bazardor",
   },
+  {
+    id: 4,
+    name: "MentorLagbe",
+    category: "Full Stack Tuition Management Platform",
+    description:
+      "A platform where students can find tutors, apply for tuition, and manage applications. Tutors can post tuition opportunities and manage their tuition activities.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe",
+    ],
+    image: "/projects/mentorlagbe.jpg",
+    liveLink: "https://mentorlagbe-client-ebon.vercel.app/",
+    githubLink: "https://github.com/the-abidkhan/mentorlagbe-client",
+  },
 ];
 
 export default projects;
