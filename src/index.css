@@ -1545,45 +1545,49 @@ img {
   letter-spacing: 2px;
 }
 
-
 /* ==============================
    PRINT RESUME ONLY
 ============================== */
 
 @page {
   size: A4 portrait;
-  margin: 5mm 8mm;
+  margin: 8mm;
 }
 
 @media print {
 
   html,
   body {
+    width: 100% !important;
     height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
     background: white !important;
+    overflow: visible !important;
   }
 
-  #root {
+  /* Hide everything outside Resume */
+  body *:not(#resume):not(#resume *):not(:has(#resume)) {
+    display: none !important;
+  }
+
+  /* Keep Resume parent elements */
+  body *:has(#resume) {
     display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    box-shadow: none !important;
   }
 
-  body * {
-    visibility: hidden !important;
-  }
-
-  #resume,
-  #resume-content,
-  #resume-content * {
-    visibility: visible !important;
-  }
-
+  /* Resume Section */
   #resume {
     display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+    position: static !important;
     width: 100% !important;
     height: auto !important;
     min-height: 0 !important;
@@ -1592,91 +1596,98 @@ img {
     background: white !important;
   }
 
-  #resume-content {
-    position: static !important;
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 2mm !important;
-    box-sizing: border-box !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-  }
-
-  .resume-actions,
-  .section-heading,
-  .section-title,
-  .section-subtitle {
+  /* Hide unnecessary elements */
+  #resume .section-title,
+  #resume .section-subtitle,
+  #resume .section-heading,
+  #resume .resume-actions {
     display: none !important;
   }
 
-  /* Resume Header */
+  /* Resume Container */
+  #resume-content {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 5mm 6mm !important;
+    box-sizing: border-box !important;
+    background: white !important;
+    color: #222222 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-family: Arial, sans-serif !important;
+  }
 
+  /* Resume Header */
   #resume-content .resume-header {
-    padding-bottom: 8px !important;
+    text-align: center !important;
+    padding-bottom: 10px !important;
   }
 
   #resume-content .resume-header h1 {
-    font-size: 22px !important;
-    margin-bottom: 3px !important;
+    font-size: 25px !important;
+    margin: 0 0 5px !important;
   }
 
   #resume-content .resume-header h3 {
-    font-size: 12px !important;
-    margin: 0 0 5px !important;
+    font-size: 14px !important;
+    margin: 0 0 8px !important;
     border: none !important;
     padding: 0 !important;
   }
 
   #resume-content .resume-header p {
-    font-size: 10px !important;
-    line-height: 1.3 !important;
-    margin: 2px 0 !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    margin: 3px 0 !important;
   }
 
-  /* Resume Blocks */
-
+  /* Resume Sections */
   #resume-content .resume-block {
-    margin-top: 7px !important;
+    margin-top: 10px !important;
     margin-bottom: 0 !important;
     break-inside: auto !important;
     page-break-inside: auto !important;
   }
 
   #resume-content .resume-block h3 {
-    font-size: 12px !important;
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
+    font-size: 14px !important;
+    margin: 5px 0 7px !important;
+    padding-bottom: 4px !important;
     border-bottom: 1.5px solid #2563eb !important;
-    padding-bottom: 3px !important;
   }
 
-  /* Project Headings */
-
+  /* Project Titles */
   #resume-content .resume-block h4 {
-    font-size: 12px !important;
-    margin-top: 6px !important;
-    margin-bottom: 2px !important;
+    font-size: 13px !important;
+    margin: 9px 0 4px !important;
     break-after: avoid !important;
     page-break-after: avoid !important;
   }
 
-  /* Paragraphs and Links */
-
+  /* All Text */
   #resume-content p,
   #resume-content span,
   #resume-content li,
   #resume-content a {
-    font-size: 11px !important;
-    line-height: 1.3 !important;
+    font-size: 12.5px !important;
+    line-height: 1.4 !important;
   }
 
-  #resume-content,
-  #resume-content * {
-    color: #222222 !important;
+  #resume-content p {
+    margin: 4px 0 !important;
   }
 
+  /* Links */
   #resume-content a {
     color: #1d4ed8 !important;
+    text-decoration: none !important;
+  }
+
+  /* Print Colors */
+  #resume-content {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }
